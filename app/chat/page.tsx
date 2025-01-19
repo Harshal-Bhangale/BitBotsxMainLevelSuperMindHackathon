@@ -167,7 +167,7 @@ function ChatPage() {
               <HomeIcon className="w-5 h-5 text-gray-400 hover:text-gray-200" />
             </a>
             <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              Social Media Performance Analyzer
+              Automated Research and Trigger Finder (ART Finder)
             </h1>
           </div>
           <div className="flex items-center space-x-2 text-sm text-gray-400">

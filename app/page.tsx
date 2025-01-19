@@ -80,7 +80,7 @@ function EnhancedLandingPage() {
         </div>
         <div className="mr-6 flex gap-6 items-center relative z-20">
           <ProfessionalButton
-            onClick={() => window.open('https://github.com/Harshal-Bhangale', '_blank')}
+            onClick={() => window.open('https://github.com/Harshal-Bhangale/BitBotsxMainLevelSuperMindHackathon', '_blank')}
             className="bg-gradient-to-r from-teal-500 to-blue-500 hover:from-teal-600 hover:to-blue-600 text-white shadow-xl transform transition-all duration-300 ease-in-out hover:scale-105"
           >
             <Code className="w-5 h-5 mr-2" />
@@ -97,15 +97,15 @@ function EnhancedLandingPage() {
           transition={{ duration: 1 }}
           className="max-w-4xl mx-auto"
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
-            Social Media Performance Analyzer
+          <h1 className="text-4xl md:text-7xl font-bold mb-5 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+            Automated Research and Trigger Finder
           </h1>
           <p className="text-3xl md:text-5xl font-extrabold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-600 leading-tight py-2 px-4">
-            Using Gen AI
+            ART Finder
           </p>
-          <p className="text-xl md:text-2xl mb-8 text-gray-300">
+          {/* <p className="text-xl md:text-2xl mb-8 text-gray-300">
             Harness the power of AI to analyze and optimize your social media presence
-          </p>
+          </p> */}
           <ProfessionalButton onClick={navigateToChat} primary className="text-lg">
             <MessageSquare className="w-6 h-6" />
             Launch Analyzer
@@ -148,32 +148,6 @@ function EnhancedLandingPage() {
       </section>
 
 
-      {/* <section className="py-20 px-4 text-center bg-black">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
-            How to Work?
-          </h2>
-          <p className="text-xl md:text-2xl mb-6 max-w-3xl mx-auto">
-            To get started with the Chatbot Analyzer, simply click the button above.
-          </p>
-
-          <div className="mb-8">
-            <h3 className="text-2xl font-semibold mb-4">Watch the Tutorial</h3>
-            <div className="flex justify-center">
-              <iframe
-                width="900"
-                height="415"
-                src="https://www.youtube.com/embed/KWsQoU1kQB0?autoplay=1&mute=1&controls=1&enablejsapi=1"  // Added 'enablejsapi' for improved control interaction
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="cursor-pointer"  // Ensures the cursor is a pointer over the video
-                style={{ pointerEvents: 'auto' }}  // Explicitly allow interaction with the iframe
-              ></iframe>
-            </div>
-          </div>
-        </section> */}
-
 
       {/* Team Section */}
       <section className="relative z-10 py-28 px-6 text-center bg-gradient-to-r from-gray-900/90 via-gray-800/90 to-black/90">
@@ -200,10 +174,9 @@ function EnhancedLandingPage() {
             </div>
           </div>
 
-          {/* Team Member 2 */}
           <div className="bg-gray-800 rounded-lg p-8 shadow-lg text-center transform transition-all duration-300 hover:scale-105 w-full sm:w-80 md:w-96">
             <img src="/assests/Profile Pic.jpg" alt="Team Member 2" className="w-40 h-40 mx-auto rounded-full mb-6" />
-            <h3 className="text-2xl font-semibold text-white">Vaibhav Sathe</h3>
+            <h3 className="text-2xl font-semibold text-white">Vaishanvi Konduru</h3>
             <p className="text-gray-400 text-lg">Web Developer</p>
             <div className="flex justify-center gap-6 mt-6">
               <a href="https://github.com/ryucraftz" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-500">
@@ -214,13 +187,30 @@ function EnhancedLandingPage() {
               </a>
             </div>
           </div>
+
+          {/* Team Member 2 */}
+          <div className="bg-gray-800 rounded-lg p-8 shadow-lg text-center transform transition-all duration-300 hover:scale-105 w-full sm:w-80 md:w-96">
+            <img src="/assests/Profile Pic.jpg" alt="Team Member 2" className="w-40 h-40 mx-auto rounded-full mb-6" />
+            <h3 className="text-2xl font-semibold text-white">Pranav Kolte</h3>
+            <p className="text-gray-400 text-lg">Web Developer</p>
+            <div className="flex justify-center gap-6 mt-6">
+              <a href="https://github.com/ryucraftz" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-500">
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/vaibhav-sathe-1920a9230/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-500">
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
         </div>
-      </section>
+
+      </section >
 
 
 
       {/* Footer */}
-      <footer className="relative z-10 py-8 px-4 border-t border-gray-800 bg-gray-900/80">
+      < footer className="relative z-10 py-8 px-4 border-t border-gray-800 bg-gray-900/80" >
         <div className="max-w-6xl mx-auto flex flex-wrap justify-between items-center">
           <div className="w-full md:w-1/3 mb-4 md:mb-0">
             <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">Bit Bots</h3>
@@ -233,8 +223,8 @@ function EnhancedLandingPage() {
             <p>&copy; 2025 Bit Bots. All rights reserved.</p>
           </div>
         </div>
-      </footer>
-    </div>
+      </footer >
+    </div >
   )
 }
 
