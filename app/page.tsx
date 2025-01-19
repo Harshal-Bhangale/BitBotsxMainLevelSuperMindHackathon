@@ -176,7 +176,7 @@ function EnhancedLandingPage() {
 
           <div className="bg-gray-800 rounded-lg p-8 shadow-lg text-center transform transition-all duration-300 hover:scale-105 w-full sm:w-80 md:w-96">
             <img src="/assests/Profile Pic.jpg" alt="Team Member 2" className="w-40 h-40 mx-auto rounded-full mb-6" />
-            <h3 className="text-2xl font-semibold text-white">Vaishanvi Konduru</h3>
+            <h3 className="text-2xl font-semibold text-white">Vaishnavi Konduru</h3>
             <p className="text-gray-400 text-lg">Web Developer</p>
             <div className="flex justify-center gap-6 mt-6">
               <a href="https://github.com/ryucraftz" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-500">
