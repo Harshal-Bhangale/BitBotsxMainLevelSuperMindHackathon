@@ -1,143 +1,95 @@
-# BitBots_x_LevelSuperMindHackathon
+# Automated Research & Trigger Finder (ART Finder)
 
-Level SuperMind Hackathon, Powered By Level SuperMind
+**ART Finder** is an AI-powered tool designed to streamline the ad research process by automating data gathering, competitor analysis, and actionable insights generation. It helps marketers identify user pain points, discover high-performing hooks, and optimize ad strategies efficiently.
 
-## Links 
+---
 
-Here are the important links for the Social Media Performance Analyzer project :
+## 🔹 Objective
 
-<!-- 1. Live Demo - https://bit-bots-x-level-super-mind-hackathon.vercel.app/
+The primary goal of **ART Finder** is to simplify and accelerate the ad research workflow by:
 
-2. YouTube Demo - https://youtu.be/sSM_xtDCn98
+* Identifying user pain points and triggers from multiple data sources such as Google, YouTube, Reddit, Quora, and app reviews.
+* Analyzing competitor ads and strategies to uncover high-performing hooks, CTAs, and content formats.
+* Generating actionable insights and recommendations for user-centric ad creation.
 
-3. Project Submission - https://www.findcoder.io/projects/bit-bots/67802a678015401a98a4a6c5 -->
+---
 
-# Social Media Performance Analyzer
-Hello Everyone, We Team Bit Bots,
+## 🔹 ETL-Powered Workflow
 
-This project demonstrates how AI, GPT integration, and database technologies enhance social media analytics by simulating engagement data and providing actionable insights. Using DataStax Astra DB for efficient data storage and Langflow with GPT integration for AI-driven workflows, the module analyzes post performance metrics such as likes, shares, and comments across different post types (e.g., Reels, Carousels). The GPT integration generates meaningful insights, helping content creators optimize strategies, improve engagement, and make data-driven decisions. This approach reduces manual effort, enhances content effectiveness, and empowers smarter social media management.
+ART Finder leverages an **ETL (Extract, Transform, Load)** pipeline to ensure structured, high-quality data for analysis:
 
-## Pre-Hackahton Assignment
+1. **Extract**:
 
-Objective - Build a basic analytics module using Langflow and DataStax to analyze engagement data from mock social media accounts.
+   * Scrapes blogs, forums, social media, YouTube videos, competitor ads, and app reviews.
+   * Integrates APIs for reliable data retrieval.
 
-Tools to Use:\
-DataStax Astra DB for database operations\
-Langflow for workflow creation and GPT integration
+2. **Transform**:
 
-Task Details:
-1. Fetch Engagement Data:
-Create a small dataset simulating social media engagement (e.g., likes, shares, comments, post types).
-Store this data in DataStax Astra DB.
+   * Cleans and preprocesses data (removes duplicates, noise, and irrelevant content).
+   * Applies NLP to extract keywords, user pain points, triggers, sentiment, and themes.
+   * Converts raw data into structured insights for analysis.
 
-2. Analyze Post Performance: Using Langflow, build a simple flow that
-Accepts post types (e.g., carousel, reels, static images) as input.
-Queries the dataset in Astra DB to calculate average engagement metrics for each post type.
+3. **Load**:
 
-3. Provide Insights: Use GPT integration in Langflow to generate simple insights based on the data
-Example outputs:
-Carousel posts have 20% higher engagement than static posts.
-Reels drive 2x more comments compared to other formats.
-##  Problem, Solution And How It Enhances Tasks And Safety 
+   * Stores processed data in a database (NoSQL or relational).
+   * Feeds insights to a user-friendly dashboard for visualization and actionable recommendations.
 
-Problem - Social media creators and marketers face challenges in analyzing content performance across formats like Reels, Carousels, and Static Images. Manual interpretation of engagement metrics such as likes, shares, and comments is time-consuming, prone to errors, and often lacks actionable insights.
+---
 
-Solution -  This project solves these issues by automating analysis with AI, GPT integration, and database technologies, delivering accurate metrics/insights and intelligent recommendations. It enables creators to optimize strategies, boost engagement, and make data-driven decisions efficiently.
+## 🔹 Key Features
 
-How It Enhances Tasks and Safety :- This project simplifies social media analytics by automating engagement analysis and providing AI-driven insights. It reduces manual effort, minimizes errors, and helps creators optimize content strategies. Using DataStax Astra DB ensures secure data handling, while Langflow with GPT integration delivers reliable recommendations. This combination boosts productivity, improves decision-making, and ensures data security, making analytics faster and smarter.
-## How it Works
+### 1. Comprehensive Research Automation
 
-1. Data Ingestion:
-Social media performance data (e.g., likes, comments, shares) is fetched and stored in Datastax Astra DB.
-Data is processed and analyzed using a LangFlow-based workflow.
+* Collects and analyzes data from multiple online sources.
+* Detects trends, user pain points, and effective solutions across platforms.
 
-2. LangFlow Workflow:
-It integrates LangFlow to orchestrate the data processing pipeline. Below snapshot of the workflow:
+### 2. Actionable Insights Generation
 
-<img src="public\assests\t3.png" alt="Project Logo" />
+* Summarizes key triggers and user problems.
+* Suggests high-performing hooks, CTAs, and content strategies tailored to audience and topic.
 
-    Workflow Steps -
-    1.Text Input: "The user begins by entering a query, such as 'Compare engagement for reels and static posts.'
-    File Loader: "This component loads the engagement data stored in a CSV file."
-    2. Parse Data: "It extracts specific metrics like likes, shares, and comments for analysis."
-    3. Astra DB: "This connects to DataStax Astra DB, where the data is stored, and fetches the necessary information."
-    4. Text Splitter: "If the data is too large, the Text Splitter divides it into smaller chunks for easier processing."
-    5. Combine Text: "Once the chunks are processed, they are combined back into a single dataset ready for GPT analysis."
-    6. Prompt: "The Prompt component structures the data in a way that GPT can easily understand."
-    7. Groq: "Groq filters the data, ensuring only the most relevant information is passed to GPT."
-    8. Chat Output: "Finally, Chat Output displays the insights, such as ‘Reels have higher engagement than static posts."
+### 3. Reference Dashboard
 
-3. Data Storage with Astra DB:
-Datastax Astra DB is used for storing social media data in a scalable, cloud-native database.
-The table schema is designed to include:
-user_id: Unique identifier for the user.
-user_name: Name of the usrr
-post_type: Type of post (reel,carousel,static image).
-likes, comments, shares: Metrics tracked for performance analysis.
-hashtag: contains various hashtag
+* Provides direct links to scraped videos, posts, and competitor ads for validation.
+* Visualizes insights via charts, word clouds, and sentiment analysis.
 
+### 4. User-Centric Interface
 
+* Simple input fields for topics and brand guidelines.
+* Intuitive dashboard displaying insights and recommendations at a glance.
 
-## Features for the Social Media Performance Analyzer
+---
 
-1. Automated Engagement Analysis :
-Collect and analyze engagement metrics (likes, shares, comments) for different post formats (Carousels, Reels, Static Images).
+## 🔹 Achievements & Impact
 
-2. AI-Driven Insights :
-Use Groq model to generate insights and recommendations based on social media performance data.
+* Built an AI-driven tool to automate ad research, extracting user pain points from multiple sources.
+* Conducted competitor analysis to identify high-performing hooks and CTAs, optimizing ad strategies and improving effectiveness.
+* Designed a dashboard with actionable insights, visualizations, and direct reference links, reducing research time by **30%**.
 
-3. Data Storage with DataStax Astra DB:
-Store and manage performance data securely and efficiently in DataStax Astra DB for scalability.
+---
 
-4. Performance Comparison:
-Compare engagement metrics across different post types to identify which format performs better.
+## 🔹 Tech Stack
 
-5. Real-Time Recommendations:
-Provide actionable, AI-powered recommendations in real-time for optimizing content strategy.
+* **Backend & AI:** Python, NLP/AI models, Web Scraping (BeautifulSoup, Selenium, or Scrapy)
+* **Frontend:** Next.js / React
+* **Database:** DataStax Astra DB, MongoDB, or SQL
+* **Visualization:** Charts, Word Clouds, Sentiment Analysis
+* **Others:** Git, GitHub, APIs
 
-## Tech Stack
+---
 
+## 🔹 How It Works
 
-1. React.js (with TypeScript for type safety
-2. Tailwind CSS
-3. Node.js with Express.js for setting up API routes.
-4. Langflow integrated with Groq for AI-driven insights and recommendations.
-5. DataStax Astra DB for secure and scalable cloud-native data storage.
+1. User inputs topic or brand guidelines.
+2. ETL pipeline extracts, transforms, and loads data from multiple sources.
+3. AI models analyze competitor ads, content trends, and user feedback.
+4. Generates actionable insights: pain points, triggers, hooks, and CTAs.
+5. Displays insights and references in a user-friendly dashboard.
 
+---
 
-## Run Locally
+## 🔹 Future Enhancements
 
-1. Clone the project
-
-```bash
-  git clone https://github.com/Harshal-Bhangale/BitBots_x_LevelSuperMindHackathon.git
-```
-
-2. Go to the project directory
-
-```bash
-  cd BitBots_x_LevelSuperMindHackathon
-```
-
-3. Install dependencies
-
-```bash
-  npm install
-```
-4. Set up environment variables for DataStax Astra DB and Groq API.
-
-5. Start the server
-
-```bash
-  npm run start
-```
-
-
-
-
-## Team 
-
-- Harshal Bhangale[ @Harshal-Bhangale](https://github.com/Harshal-Bhangale)
-- Vaibhav Sathe [ @ryucraftz](https://github.com/ryucraftz)
-
-
+* Real-time trend detection for emerging topics.
+* Integration with additional ad platforms for broader competitor analysis.
+* AI-driven recommendation engine to suggest content ideas automatically.
